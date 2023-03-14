@@ -45,20 +45,16 @@ The Program counts the number of files moved, specify the type moved and the amo
   Moving the files that pass the if statement with the method from shutil called move:<pre><code>move(downloadDirectory + r"\" + file , Video destination Folder) # Here the move method takes 2 parameters : Folder we are moving file out from and Destination folder</code></pre>
   I do this process for each file extension ; photos,documents,compressed files...e.t.c
 
-# INSTALLATION/RUNNING/REQUIREMENT 
+# REQUIREMENT 
 - git , Go to [Git downloads](https://git-scm.com/downloads) to check installation for your Operating System
 - Python 3.x + , Go to [Python website](https://www.python.org/downloads/) and download the latest python version
 - Command Line for windows or Terminal for Linux users
-
-***
 
 ## Running program for window Users
 - Open Command Line
 - run:<pre><code>git clone https://github.com/AnozieChibuike/FileSorterWithPython</code></pre>A new folder named ***FileSorterWithPython*** will be created
 - Tell the command line to go to the ***FileSorterWithPython*** folder<pre><code>cd FileSorterWithPython</code></pre>
 - Run program:<pre><code>py fileMod.py</code></pre>
-
-***
 
 ## Running program for Linux Users
 - Open Terminal
