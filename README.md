@@ -30,8 +30,19 @@ The Program counts the number of files moved, specify the type moved and the amo
   I created a [for loop](https://www.w3schools.com/python/python_for_loops.asp) to iterate over files in our download directory.
 
   Code:<pre><code>for f in os.listdir(download directory): # os.listdir returns a list of files and folders in the parameter given... the parameter must be a directory</code></pre>
-  Then I use an [if statement](https://www.w3schools.com/python/python_conditions.asp) to filter out hidden files
+  Then I use an [if statement](https://www.w3schools.com/python/python_conditions.asp) to filter out hidden files.
 
   Code:<pre><code>if not f.startswith('.'): # hidden files starts with "." So it is filtered out </code></pre>
-  Appending files that passes the if statement to our previous empty list named files
+  Appending files that passes the if statement to our previous empty list named files.
+
   Code:<pre><code>files.append(f)</code></pre>
+- Lastly I iterated through the new list of files named files.
+
+  Code:<pre><code>for file in files:</pre></code>
+  Creating an if statement to know the type of file to move, 
+  
+  Here is an example for video files:<pre><code>if file.endswith(previously created tuple for video file extension): # returns true or false for each iteration</code></pre>
+  Moving the files that pass the if statement:<pre><code>move
+  I do this process for each file extension.
+  
+
