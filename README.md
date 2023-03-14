@@ -18,4 +18,4 @@ The Program counts the number of files moved, specify the type moved and the amo
    >Path method from pathlib module
 
     Since they are ***built-in*** python libraries, you do not need to worry about any installation of module.
-- Secondly, I set the download directory/folder using<pre><code>str"Path.home()" + "\Downloads" #str() method used to represent the return value of Path.home() as a string </code></pre> <code>Path.home()</code> returns the a value of the home directory
+- Secondly, I set the download directory/folder using<pre><code>str"Path.home()" + "\Downloads" #str() method used to represent the return value of Path.home() as a string </code></pre> <code>Path.home()</code> returns the a value of the home directory, see [PathLib Example](https://www.tutorialspoint.com/How-to-find-the-real-user-home-directory-using-Python) to learn more
