@@ -42,7 +42,7 @@ The Program counts the number of files moved, specify the type moved and the amo
   Creating an if statement to know the type of file to move, 
   
   Here is an example for video files:<pre><code>if file.endswith(previously created tuple for video file extension): # returns true or false for each iteration</code></pre>
-  Moving the files that pass the if statement with the method from shutil called move:<pre><code>move(downloadDirectory + r"\" + file , Video destination Folder) # Here the move method takes 2 parameters : Folder we are moving file out from and Destination folder</code><pre>
+  Moving the files that pass the if statement with the method from shutil called move:<pre><code>move(downloadDirectory + r"\" + file , Video destination Folder) # Here the move method takes 2 parameters : Folder we are moving file out from and Destination folder</code></pre>
   I do this process for each file extension ; photos,documents,compressed files...e.t.c
 
 # INSTALLATION/RUNNING/REQUIREMENT 
