@@ -22,5 +22,4 @@ The Program counts the number of files moved, specify the type moved and the amo
   I did the same for all the destination folders replacing<code>"\Downloads"</code> with <code>"\\{Name of destination folder}"</code>
 - Thirldy, I iterated through the destination folders and if they do not exist a new one is created.
   code:<pre><code>for folders in [All the destination folder]:
-   Jsjshs
-     Sush</code></pre>
+   Sush</code></pre>
