@@ -17,4 +17,5 @@ The Program counts the number of files moved, specify the type moved and the amo
 
    >Path method from pathlib module
 
-You
+    Since they are ***built-in*** python libraries, you do not need to worry about any installation of module.
+- Secondly, I set the download directory/folder with the <pre><code>Path.home()</code></pre> method
