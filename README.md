@@ -25,4 +25,10 @@ The Program counts the number of files moved, specify the type moved and the amo
   Checking if folder exist:<pre><code>if not os.path.exist(folders): # returns true if folder exist</code></pre>
   If folder does not exist: <pre><code>os.mkdir(folders) # creates a new folder with the non-existing folder as the name</code></pre>
 - Then, I created a [tuple](https://www.w3schools.com/python/python_tuples.asp) with the tuple items as a string of each of the file extensions so the program can know what files to move
-- And then, I created an empty [list](https://www.w3schools.com/python/python_lists.asp) named <code>files</code>
+- And then, I created an empty [list](https://www.w3schools.com/python/python_lists.asp) named <code>files</code> which iterated files will be appended to it later.
+  I created a [for loop](https://www.w3schools.com/python/python_for_loops.asp) to iterate over files in our download directory.
+  Code:<pre><code>for f in os.listdir(download directory): # os.listdir returns a list of files and folders in the parameter given... the parameter must be a directory</code></pre>
+  Then I use an [if statement](https://www.w3schools.com/python/python_conditions.asp) to filter out hidden files
+  Code:<pre><code>if not f.startswith('.'): # hidden files starts with "." So it is filtered out </code></pre>
+  Appending files that passes the if statement to our previous empty list named files
+  Code:<pre><code>files.append(f)</code></pre>
