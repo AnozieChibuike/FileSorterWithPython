@@ -11,6 +11,6 @@ The Program counts the number of files moved, specify the type moved and the amo
 
 - Firstly, I imported the required ***modules*** for the program
    > os module 
->move method from shutil module
->Path method from pathlib module
+    >move method from shutil module
+     >Path method from pathlib module
 You
