@@ -19,7 +19,7 @@ The Program counts the number of files moved, specify the type moved and the amo
 
     Since they are ***built-in*** python libraries, you do not need to worry about any installation of module.
 - Secondly, I set the download directory/folder using:<pre><code>str"Path.home()" + "\Downloads"</code></pre> <code>Path.home()</code> returns the a value of the home directory, see: [PathLib Example](https://www.tutorialspoint.com/How-to-find-the-real-user-home-directory-using-Python) to learn more.
-  I did the same for all the destination folders replacing<code>"\Downloads"</code> with <code>"\\{Name of destination folder}"</code>
+  I did the same for all the destination folders replacing<code>"\Downloads"</code> with <code>"\\{Name of destination folder}"</code>NOTE : I used <code>Path.home()</code> so the program can be cross platform
 - Thirdly, I iterated through the destination folders and if they do not exist a new one is created.
   
   Code:<pre><code>for folders in [All the destination folder]:</pre></code>
@@ -42,7 +42,27 @@ The Program counts the number of files moved, specify the type moved and the amo
   Creating an if statement to know the type of file to move, 
   
   Here is an example for video files:<pre><code>if file.endswith(previously created tuple for video file extension): # returns true or false for each iteration</code></pre>
-  Moving the files that pass the if statement:<pre><code>move
-  I do this process for each file extension.
-  
+  Moving the files that pass the if statement with the method from shutil called move:<pre><code>move(downloadDirectory + r"\" + file , Video destination Folder) # Here the move method takes 2 parameters : Folder we are moving file out from and Destination folder</code><pre>
+  I do this process for each file extension ; photos,documents,compressed files...e.t.c
 
+# INSTALLATION/RUNNING/REQUIREMENT 
+- git , Go to [Git downloads](https://git-scm.com/downloads) to check installation for your Operating System
+- Python 3.x + , Go to [Python website](https://www.python.org/downloads/) and download the latest python version
+- Command Line for windows or Terminal for Linux users
+
+***
+
+Running program for window Users
+- Open Command Line
+- run:<pre><code>git clone https://github.com/AnozieChibuike/FileSorterWithPython</code></pre>A new folder named ***FileSorterWithPython*** will be created
+- Tell the command line to go to the ***FileSorterWithPython*** folder<pre><code>cd FileSorterWithPython</code></pre>
+- Run program:<pre><code>py fileMod.py</code></pre>
+
+***
+
+Running program for Linux Users
+- Open Terminal
+- run:<pre><code>git clone https://github.com/AnozieChibuike/FileSorterWithPython</code></pre>A new folder named ***FileSorterWithPython*** will be created
+- Tell the Terminal to go to the ***FileSorterWithPython*** folder<pre><code>cd FileSorterWithPython</code></pre>
+- <code>ls</code> to see the files in the ***FileSorterWithPython*** folder
+- Run program:<pre><code>python3 fileMod.py</code></pre>
