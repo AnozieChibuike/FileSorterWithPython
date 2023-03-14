@@ -25,4 +25,4 @@ The Program counts the number of files moved, specify the type moved and the amo
   Checking if folder exist:<pre><code>if not os.path.exist(folders): # returns true if folder exist</code></pre>
   If folder does not exist: <pre><code>os.mkdir(folders) # creates a new folder with the non-existing folder as the name</code></pre>
 - Then, I created a [tuple](https://www.w3schools.com/python/python_tuples.asp) with the tuple items as a string of each of the file extensions so the program can know what files to move
-- And then, I created an empty [list](https://www.w3schools.com/python/python_lists.asp)
+- And then, I created an empty [list](https://www.w3schools.com/python/python_lists.asp) named <code>files</code>
