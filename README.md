@@ -23,4 +23,4 @@ The Program counts the number of files moved, specify the type moved and the amo
 - Thirdly, I iterated through the destination folders and if they do not exist a new one is created.
   code:<pre><code>for folders in [All the destination folder]:
           if not os.path.exist(folders): # returns true if folder exist
-       </code></pre>
+      </code></pre>
