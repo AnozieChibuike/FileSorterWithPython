@@ -5,5 +5,5 @@ This Program makes it **easier** for **users** to **sort** or **arrange** files 
 If a destination folder does **NOT** exist,A _new_ one is automatically created by the program as the name of the missing folder for the type of file supposed to be stored in it.
 
 
-#ADDED FEATURES
+##ADDED FEATURES
 
