@@ -52,7 +52,7 @@ The Program counts the number of files moved, specify the type moved and the amo
 
 ***
 
-Running program for window Users
+## Running program for window Users
 - Open Command Line
 - run:<pre><code>git clone https://github.com/AnozieChibuike/FileSorterWithPython</code></pre>A new folder named ***FileSorterWithPython*** will be created
 - Tell the command line to go to the ***FileSorterWithPython*** folder<pre><code>cd FileSorterWithPython</code></pre>
@@ -60,7 +60,7 @@ Running program for window Users
 
 ***
 
-Running program for Linux Users
+## Running program for Linux Users
 - Open Terminal
 - run:<pre><code>git clone https://github.com/AnozieChibuike/FileSorterWithPython</code></pre>A new folder named ***FileSorterWithPython*** will be created
 - Tell the Terminal to go to the ***FileSorterWithPython*** folder<pre><code>cd FileSorterWithPython</code></pre>
