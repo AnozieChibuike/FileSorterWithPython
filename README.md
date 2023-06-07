@@ -2,8 +2,9 @@
 
 This is a Python program that organizes files in a user's Downloads folder into different folders based on their file type.
 
-# Dependencies
 
+# Dependencies
+-Great Mindset
 -Python 3.6 or higher
 -os module
 -shutil module
