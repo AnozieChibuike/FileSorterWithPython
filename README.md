@@ -15,7 +15,13 @@ This is a Python program that organizes files in a user's Downloads folder into 
 Clone or download the repository to your local machine.
 Navigate to the directory where the program is saved.
 Open a terminal or command prompt window in the directory.
-Run the program using the command <pre><code>python fileMod.py</code></pre>
+
+### Windows
+Run the program using the command <pre><code>python main.py</code></pre> or running the file<pre><code>run.bat</code></pre>
+
+### Linux
+Run the program using the command <pre><code>python3 main.py</code></pre> or running <pre><code>./run.sh</code></pre>
+
 
 # How it works
 
