@@ -1,17 +1,28 @@
 import os
 from shutil import  move
 from pathlib import Path
+import platform
 
-root_dir =  str(Path.home()) + '\Downloads'
-
-video_dir = str(Path.home()) + '\Videos'
-pic_dir = str(Path.home()) + '\Pictures'
-doc_dir = str(Path.home()) + '\Documents'
-app_dir = str(Path.home()) + '\Apps'
-other_dir = str(Path.home()) + '\Others'
-sub_dir = str(Path.home()) + '\Videos\Subtitle'
-music_dir = str(Path.home()) + '\Music'
-zip_dir = str(Path.home()) + '\CompressedFiles'
+if platform.system() == 'Linux':
+    root_dir =  str(Path.home()) + '\Downloads'
+    video_dir = str(Path.home()) + '/Videos'
+    pic_dir = str(Path.home()) + '/Pictures'
+    doc_dir = str(Path.home()) + '/Documents'
+    app_dir = str(Path.home()) + '/Apps'
+    other_dir = str(Path.home()) + '/Others'
+    sub_dir = str(Path.home()) + '/Videos/Subtitle'
+    music_dir = str(Path.home()) + '/Music'
+    zip_dir = str(Path.home()) + '/Zip'
+else:
+    root_dir =  str(Path.home()) + '\Downloads'
+    video_dir = str(Path.home()) + '\Videos'
+    pic_dir = str(Path.home()) + '\Pictures'
+    doc_dir = str(Path.home()) + '\Documents'
+    app_dir = str(Path.home()) + '\Apps'
+    other_dir = str(Path.home()) + '\Others'
+    sub_dir = str(Path.home()) + '\Videos\Subtitle'
+    music_dir = str(Path.home()) + '\Music'
+    zip_dir = str(Path.home()) + '\CompressedFiles'
 
 for folder in [video_dir,pic_dir,doc_dir,app_dir,other_dir,sub_dir,music_dir,zip_dir]:
     if not os.path.exists(folder):
