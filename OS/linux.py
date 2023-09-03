@@ -1,10 +1,11 @@
 import os
 from shutil import  move
 from pathlib import Path
+from unratedwriting import typewrite
 
 def linux():
     try:
-        print('Opearting System: Linux\n')
+        typewrite('Opearting System: Linux\n')
         root_dir =  str(Path.home()) + '/Downloads'
         video_dir = str(Path.home()) + '/Videos'
         pic_dir = str(Path.home()) + '/Pictures'
@@ -17,7 +18,7 @@ def linux():
 
         for folder in [video_dir,pic_dir,doc_dir,app_dir,other_dir,sub_dir,music_dir,zip_dir]:
             if not os.path.exists(folder):
-                print(f'{folder} does not exist, creating folder...\n')
+                typewrite(f'{folder} does not exist, creating folder...\n')
                 os.mkdir(folder)
 
         vid = ('.mp4','.mkv','.mov','.webm','.MP4')
@@ -72,29 +73,29 @@ def linux():
                 otherLen += 1
                 move(root_dir+'/'+file,other_dir)
         if not vidLen == 0:
-            print('Successfully moved '+str(vidLen)+' video(s)!')
+            typewrite('Successfully moved '+str(vidLen)+' video(s)!')
         if not picLen == 0:
-            print('Successfully moved '+str(picLen)+' photo(s)!')
+            typewrite('Successfully moved '+str(picLen)+' photo(s)!')
         if not docLen == 0:
-            print('Successfully moved '+str(docLen)+' document(s)!')
+            typewrite('Successfully moved '+str(docLen)+' document(s)!')
         if not appLen == 0:
-            print('Successfully moved '+str(appLen)+' executable(s)!')
+            typewrite('Successfully moved '+str(appLen)+' executable(s)!')
         if not srtLen == 0:
-            print('Successfully moved '+ str(srtLen)+' subtitle(s)!')
+            typewrite('Successfully moved '+ str(srtLen)+' subtitle(s)!')
         if not audLen == 0:
-            print('Successfully moved '+ str(audLen)+' music file(s)!')
+            typewrite('Successfully moved '+ str(audLen)+' music file(s)!')
         if not audLen == 0:
-            print('Successfully moved '+ str(audLen)+' music file(s)!')
+            typewrite('Successfully moved '+ str(audLen)+' music file(s)!')
         if not compLen == 0:
-            print('Successfully moved '+ str(compLen)+' compressed file(s)!')
+            typewrite('Successfully moved '+ str(compLen)+' compressed file(s)!')
         if not otherLen == 0:
-            print('Successfully moved '+ str(otherLen)+' other file(s)!')
+            typewrite('Successfully moved '+ str(otherLen)+' other file(s)!')
         totalMoved = vidLen + picLen + docLen + appLen + srtLen + audLen +otherLen
-        print('\nMoved total of ' + str(totalMoved) + ' files')
-        print('\nProgram ran without error....')
+        typewrite('\nMoved total of ' + str(totalMoved) + ' files')
+        typewrite('\nProgram ran without error....')
         return (1)
     except Exception as e:
-        print(e)
+        typewrite(e)
         return (0)
     
 if __name__ == "__main__":
